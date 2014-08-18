@@ -5,8 +5,4 @@
 */cache/!index.html
 */cache/!.htaccess
 
-/nbproject
-
-/.settings
-.buildpath
-.project
+/nbproject/
