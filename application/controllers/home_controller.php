@@ -1,7 +1,5 @@
 <?php
 
-//
-
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
@@ -23,11 +21,12 @@ class home_controller extends CI_Controller {
     }
 
     public function index() {
-        print_r($this->home->pesquisar());
-
+        $dados['pesq'] = $this->home->pesquisar();
 //        $dados['xml'] = $xml;
 //        $this->load->view('home_view', $dados);
-        $this->load->view('home_view');
+//        $this->load->view('home_view', $dados);
+        $this->layout->region('container', 'index', $dados);
+        $this->layout->show('blade');
     }
 
     public function pesquisarProdutos() {

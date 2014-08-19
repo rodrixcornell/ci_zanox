@@ -75,6 +75,13 @@
             <h1>CodeIgniter & Zanox!</h1>
 
             <div id="body">
+                <code>
+                    <ul>
+                        <?php foreach ($pesq as $key => $value) { ?>
+                            <li><?php echo $value; ?></li>
+                        <?php } ?>
+                    </ul>
+                </code>
 
                 <p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
